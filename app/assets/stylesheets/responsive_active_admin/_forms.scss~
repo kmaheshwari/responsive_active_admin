@@ -40,6 +40,13 @@ form {
     }
   }
 
+  /* Text Fields */
+  input[type=text], input[type=password], input[type=email], input[type=number], input[type=url], input[type=tel], textarea {
+    @include responsive {
+      width: calc(100% - #{$text-input-total-padding});
+    }
+  }
+
   select {
     @include responsive {
       width: 100%;
